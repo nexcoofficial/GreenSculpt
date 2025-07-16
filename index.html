@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gold High Waist CD | Premium Shapewear</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#D4AF37',
+                        darkgold: '#B8860B',
+                        cream: '#FFF8E1',
+                        charcoal: '#333333',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap');
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #fafafa;
+            color: #333;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+        }
+        
+        .hero-bg {
+            background: linear-gradient(135deg, #f9f9f9 0%, #fff8e1 100%);
+        }
+        
+        .gold-gradient {
+            background: linear-gradient(135deg, #D4AF37 0%, #B8860B 100%);
+        }
+        
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.9);
+        }
+        
+        .lightbox-content {
+            margin: auto;
+            display: block;
+            max-width: 90%;
+            max-height: 90vh;
+            object-fit: contain;
+            animation: lightboxFadeIn 0.3s ease;
+        }
+
+        @keyframes lightboxFadeIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .lightbox {
+            background-color: rgba(0,0,0,0.8);
+            backdrop-filter: blur(5px);
+        }
+
+        .lightbox-close {
+            color: white;
+            text-shadow: 0 0 5px rgba(0,0,0,0.5);
+            font-size: 50px;
+            top: 30px;
+            right: 30px;
+        }
+        
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        
+        .lightbox-close:hover,
+        .lightbox-close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        .testimonial-card {
+            transition: transform 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .urgency-timer {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(212, 175, 55, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0); }
+        }
+        
+        .color-option {
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        
+        .color-option:hover, .color-option.active {
+            border-color: #D4AF37;
+            transform: scale(1.05);
+        }
+        
+        .size-chart {
+            transition: all 0.3s ease;
+        }
+        
+        .size-chart:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .sticky-header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .floating-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 99;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Sticky Header -->
+    <header class="sticky-header bg-white py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://down-id.img.susercontent.com/file/id-11134216-7r98p-llostwynkdrf83" alt="Store Logo" class="h-12 w-12 rounded-full object-cover">
+                <h1 class="ml-3 text-xl font-bold text-charcoal">Gold High Waist CD</h1>
+                <span class="ml-2 bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full flex items-center">
+                    <i class="fas fa-check-circle mr-1"></i> Verified
+                </span>
+            </div>
+            <div>
+                <a href="#order" class="gold-gradient text-white px-6 py-2 rounded-full font-semibold hover:opacity-90 transition">Beli Sekarang</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <img id="mainImage" src="https://down-id.img.susercontent.com/file/id-11134207-7rbk6-mart5z84mfeg76.webp" alt="Gold High Waist CD" class="w-full h-auto rounded-lg object-cover">
+                    </div>
+                    
+                    <!-- Thumbnail Gallery -->
+                    <div class="grid grid-cols-4 gap-2 mt-4">
+                        <div class="cursor-pointer" onclick="changeImage('https://down-id.img.susercontent.com/file/id-11134207-7rbk6-mart5z84mfeg76.webp')">
+                            <img src="https://down-id.img.susercontent.com/file/id-11134207-7rbk6-mart5z84mfeg76.webp" alt="Thumbnail 1" class="w-full h-20 object-cover rounded border border-gray-200">
+                        </div>
+                        <div class="cursor-pointer" onclick="changeImage('https://down-id.img.susercontent.com/file/id-11134207-7rbk4-mart5z851vnc00.webp')">
+                            <img src="https://down-id.img.susercontent.com/file/id-11134207-7rbk4-mart5z851vnc00.webp" alt="Thumbnail 2" class="w-full h-20 object-cover rounded border border-gray-200">
+                        </div>
+                        <div class="cursor-pointer" onclick="changeImage('https://down-id.img.susercontent.com/file/id-11134207-7rbk1-mart5z846yp0d1.webp')">
+                            <img src="https://down-id.img.susercontent.com/file/id-11134207-7rbk1-mart5z846yp0d1.webp" alt="Thumbnail 3" class="w-full h-20 object-cover rounded border border-gray-200">
+                        </div>
+                        <div class="cursor-pointer" onclick="changeImage('https://down-id.img.susercontent.com/file/id-11134207-7rbk5-mart5z8o65spe7.webp')">
+                            <img src="https://down-id.img.susercontent.com/file/id-11134207-7rbk5-mart5z8o65spe7.webp" alt="Thumbnail 4" class="w-full h-20 object-cover rounded border border-gray-200">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2 md:pl-12">
+                    <span class="bg-gold text-white px-3 py-1 rounded-full text-sm font-medium">BEST SELLER</span>
+                    <h1 class="text-4xl md:text-5xl font-bold mt-4 text-charcoal">Gold High Waist CD</h1>
+                    <p class="text-gray-600 mt-2">Shapewear premium dengan kenyamanan maksimal</p>
+                    
+                    <div class="flex items-center mt-6">
+                        <span class="text-3xl font-bold text-gold">Rp 188.000</span>
+                        <span class="ml-4 line-through text-gray-400">Rp 250.000</span>
+                        <span class="ml-4 bg-red-100 text-red-800 px-2 py-1 rounded-full text-sm">Hemat 25%</span>
+                    </div>
+                    
+                    <!-- Urgency Timer -->
+                    <div class="urgency-timer mt-6 bg-white p-4 rounded-xl border-2 border-gold">
+                        <p class="text-center text-sm text-red-600 font-semibold"><i class="fas fa-clock mr-2"></i>PENAWARAN TERBATAS!</p>
+                        <div class="flex justify-center mt-2">
+                            <div class="text-center mx-2">
+                                <div id="hours" class="bg-gray-800 text-white rounded-lg py-2 px-3 text-xl font-bold">02</div>
+                                <div class="text-xs mt-1 text-gray-600">Jam</div>
+                            </div>
+                            <div class="text-2xl font-bold text-gray-800 pt-1">:</div>
+                            <div class="text-center mx-2">
+                                <div id="minutes" class="bg-gray-800 text-white rounded-lg py-2 px-3 text-xl font-bold">45</div>
+                                <div class="text-xs mt-1 text-gray-600">Menit</div>
+                            </div>
+                            <div class="text-2xl font-bold text-gray-800 pt-1">:</div>
+                            <div class="text-center mx-2">
+                                <div id="seconds" class="bg-gray-800 text-white rounded-lg py-2 px-3 text-xl font-bold">30</div>
+                                <div class="text-xs mt-1 text-gray-600">Detik</div>
+                            </div>
+                        </div>
+                        <p class="text-center text-xs text-gray-500 mt-2">Harga akan naik setelah timer habis</p>
+                    </div>
+                    
+                    <!-- Color Options -->
+                    <div class="mt-8">
+                        <h3 class="text-lg font-semibold text-charcoal">Pilih Warna:</h3>
+                        <div class="flex mt-2">
+                            <div class="color-option active mr-4" onclick="selectColor(this, 'Hijau')">
+                                <img src="https://down-id.img.susercontent.com/file/id-11134207-7rbk0-m77fq5w6ckmkd7@resize_w450_nl.webp" alt="Hijau" class="w-16 h-16 rounded-full object-cover">
+                                <p class="text-center mt-1 text-sm">Hijau</p>
+                            </div>
+                            <div class="color-option mr-4" onclick="selectColor(this, 'Hitam')">
+                                <img src="https://down-id.img.susercontent.com/file/id-11134207-7rbk3-m77fq5w6dz7093@resize_w450_nl.webp" alt="Hitam" class="w-16 h-16 rounded-full object-cover">
+                                <p class="text-center mt-1 text-sm">Hitam</p>
+                            </div>
+                            <div class="color-option" onclick="selectColor(this, 'Putih')">
+                                <img src="https://down-id.img.susercontent.com/file/id-11134207-7rbk0-m77fq5w6fdrgdd@resize_w450_nl.webp" alt="Putih" class="w-16 h-16 rounded-full object-cover">
+                                <p class="text-center mt-1 text-sm">Putih</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- CTA Button -->
+                    <div class="mt-8">
+                        <a href="#order" class="gold-gradient text-white text-center block py-4 rounded-xl font-bold text-lg hover:opacity-90 transition">BELI SEKARANG <i class="fas fa-arrow-right ml-2"></i></a>
+                        <p class="text-center mt-2 text-gray-600"><i class="fas fa-shield-alt text-gold mr-1"></i> Garansi 30 Hari Pengembalian</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-16 bg-cream">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-charcoal">Keunggulan Gold High Waist CD</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                    <div class="w-16 h-16 gold-gradient rounded-full flex items-center justify-center mx-auto">
+                        <i class="fas fa-heart text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mt-4">Nyaman Dipakai Seharian</h3>
+                    <p class="mt-2 text-gray-600">Bahan premium yang lembut dan elastis membuat Anda nyaman beraktivitas seharian</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                    <div class="w-16 h-16 gold-gradient rounded-full flex items-center justify-center mx-auto">
+                        <i class="fas fa-sync-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mt-4">Tahan Lama</h3>
+                    <p class="mt-2 text-gray-600">Kualitas bahan terbaik yang tidak mudah melar meski setelah dicuci berkali-kali</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                    <div class="w-16 h-16 gold-gradient rounded-full flex items-center justify-center mx-auto">
+                        <i class="fas fa-medal text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mt-4">Desain Premium</h3>
+                    <p class="mt-2 text-gray-600">Desain yang stylish dan modern, membuat Anda tampil percaya diri</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Model Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-charcoal">Tampil Percaya Diri dengan Gold High Waist CD</h2>
+            <div class="mt-12 flex justify-center">
+                <div class="relative">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134208-7rbkc-mart6u2t5tqx34@resize_w1750_nl.webp" alt="Model" class="rounded-xl shadow-lg w-full max-w-2xl">
+                    <div class="absolute bottom-4 left-4 bg-white bg-opacity-80 px-4 py-2 rounded-lg">
+                        <p class="font-semibold text-charcoal">Model Tinggi 168cm, Berat 58kg<br>Menggunakan Ukuran M</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Size Chart -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-charcoal">Panduan Ukuran</h2>
+            <p class="text-center mt-2 text-gray-600">Pilih ukuran yang sesuai dengan tubuh Anda</p>
+            
+            <div class="flex flex-col md:flex-row justify-center items-center mt-12 gap-8">
+                <div class="size-chart bg-white p-6 rounded-xl shadow-md">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7rbk2-mart5z846yjv0d.webp" alt="Size Chart" class="w-full max-w-md rounded-lg">
+                </div>
+                <div class="size-chart bg-white p-6 rounded-xl shadow-md">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7rbk5-mart5z851v6s3f.webp" alt="Size Guide" class="w-full max-w-md rounded-lg">
+                </div>
+            </div>
+            
+            <div class="mt-8 text-center">
+                <p class="text-gray-600"><i class="fas fa-info-circle text-gold mr-1"></i> Jika ragu dengan ukuran, silakan konsultasi via WhatsApp</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Description -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-charcoal">Detail Produk</h2>
+            <div class="mt-12 flex justify-center">
+                <img src="https://down-id.img.susercontent.com/file/id-11134208-7rbk9-marta3fhgx7o8f@resize_w1750_nl.webp" alt="Product Description" class="rounded-xl shadow-lg w-full max-w-4xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Form Section -->
+    <section id="order" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-charcoal">Form Pemesanan</h2>
+            <p class="text-center mt-2 text-gray-600">Isi data berikut untuk memesan Gold High Waist CD</p>
+            
+            <div class="mt-12 max-w-2xl mx-auto bg-white p-6 rounded-xl shadow-md">
+                <!-- OrderOnline Embed Code -->
+                <div class="ooef">
+                    <form class="orderonline-embed-form" data-username="mila" data-product-slug="greensculpt" data-product-id="6877ec938f6fb58c09064f7f" id="oo-embed-form-greensculpt-8028" data-origin="orderonline">
+                        <div class="ooef-loader">
+                            <style>
+                                .ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}
+                                @keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}
+                                @-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}
+                                .ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}
+                                .ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}
+                                .ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}
+                                @-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}
+                                @keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}
+                            </style>
+                            <div aria-live="polite" role="status">
+                                <div>Loading...</div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <script>
+                    if (typeof xLogError != 'function') {
+                        var xLogError = function (error) {
+                            var req = new XMLHttpRequest();
+                            var payload = JSON.stringify({ url: document.location.href, line: error.line, stack: error.stack });
+                            var params = 'message=' + encodeURIComponent(error.name) + '&payload=' + encodeURIComponent(payload) + '&type=embed&level=error';
+                            req.open('POST', 'https://api.orderonline.id/log', true);
+                            req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                            req.send(params);
+                        };
+                    }
+                    try {
+                        if (typeof xEmbedScript != 'function') {
+                            var xEmbedScript = function () {
+                                !function(w, d, e, v, id, t, s) {
+                                    if (d.getElementById(id)) return;
+                                    t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                                    s = d.getElementsByTagName(e)[0];
+                                    s.parentNode.insertBefore(t, s);
+                                }(window, document, 'script', 'https://cdn.orderonline.id/js/embed-v2-slim.min.js?v=8.0.4', 'oo-embed-js');
+                            };
+                        }
+                        if (typeof xEmbedInit != 'function') {
+                            var xEmbedInit = function (w, n) {
+                                if (w.ooe) return;
+                                n = w.ooe = function() {
+                                    n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                                };
+                                if (!w._ooe) w._ooe = n;
+                                n.push = n;n.loaded = !0;n.version = '8.0.4';n.queue = [];
+                            };
+                        }
+                        xEmbedInit(window);
+                        ooe('setup', 'redirect', 'https://mila.orderonline.id');
+                        ooe('init', '5f1a7b8fa9bf807da24d83bb', '6877ec938f6fb58c09064f7f', '6877ec938f6fb58c09064f80', 'oo-embed-form-greensculpt-8028', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":true,"triggerGtm":true});
+                        if (!window.jQuery) {
+                            !function(w, d, e, v, id, t, s) {
+                                if (d.getElementById(id)) return;
+                                t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                                t.addEventListener('load', xEmbedScript);
+                                s = d.getElementsByTagName(e)[0];
+                                s.parentNode.insertBefore(t, s);
+                            }(window, document, 'script', 'https://cdn.orderonline.id/js/vendor/jquery.min.js', 'oo-embed-jquery');
+                        } else {
+                            xEmbedScript();
+                        }
+                    } catch (e) {
+                        xLogError(e);
+                        throw e;
+                    }
+                </script>
+                <!-- End OrderOnline Embed Code -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-cream">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-charcoal">Apa Kata Pelanggan Kami?</h2>
+            <p class="text-center mt-2 text-gray-600">Testimoni asli dari pembeli Gold High Waist CD</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-white p-6 rounded-xl shadow-md">
+                    <div class="flex items-start">
+                        <img src="https://i.pinimg.com/736x/56/d7/65/56d76520e6193bc828ea4aecc567259b.jpg" alt="Dinda" class="w-10 h-10 rounded-full object-cover">
+                        <div class="ml-3 flex-1">
+                            <div class="flex justify-between items-start">
+                                <h4 class="font-semibold">Dinda</h4>
+                                <span class="text-xs text-gray-500">2 hari lalu</span>
+                            </div>
+                            <div class="flex text-gold text-sm mt-1">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="mt-2 text-gray-600">"Packaging premium, bakal repeat order!"</p>
+                            <div class="mt-3 flex items-center text-xs text-gray-500">
+                                <span class="mr-3">Ukuran: M</span>
+                                <span>Warna: Hijau</span>
+                            </div>
+                            <img src="https://down-id.img.susercontent.com/file/id-11134103-7rbke-ma8g2rh5krm51d.webp" alt="Review Dinda" class="mt-3 rounded-lg cursor-pointer w-24 h-24 object-cover" onclick="showLightbox(this.src)">
+                            <div class="mt-3 flex items-center text-xs text-gray-500">
+                                <button class="flex items-center mr-4">
+                                    <i class="far fa-thumbs-up mr-1"></i> 12
+                                </button>
+                                <button class="flex items-center">
+                                    <i class="far fa-comment mr-1"></i> 3
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-white p-6 rounded-xl shadow-md">
+                    <div class="flex items-center">
+                        <img src="https://i.pinimg.com/1200x/bd/5e/6a/bd5e6adcd31a786f9a333647ec31410a.jpg" alt="Citra" class="w-12 h-12 rounded-full object-cover">
+                        <div class="ml-3">
+                            <h4 class="font-semibold">Citra</h4>
+                            <div class="flex text-gold">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-gray-600 italic">"Sudah order 2x, puas!"</p>
+                    <img src="https://down-id.img.susercontent.com/file/id-11134103-7ra0k-mb6todku4zixe1.webp" alt="Review Citra" class="mt-4 rounded-lg cursor-pointer w-24 h-24 object-cover" onclick="showLightbox(this.src)">
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-white p-6 rounded-xl shadow-md">
+                    <div class="flex items-center">
+                        <img src="https://i.pinimg.com/736x/55/bc/47/55bc4757b9822340b7cbbafb9a841ff1.jpg" alt="Vina" class="w-12 h-12 rounded-full object-cover">
+                        <div class="ml-3">
+                            <h4 class="font-semibold">Vina</h4>
+                            <div class="flex text-gold">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-gray-600 italic">"Bahan bagus, nyaman dipakai. Bakal order lagi!"</p>
+                    <img src="https://down-id.img.susercontent.com/file/id-11134103-7rbk8-m918djk2ltd954.webp" alt="Review Vina" class="mt-4 rounded-lg cursor-pointer w-24 h-24 object-cover" onclick="showLightbox(this.src)">
+                </div>
+                
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card bg-white p-6 rounded-xl shadow-md">
+                    <div class="flex items-center">
+                        <img src="https://i.pinimg.com/736x/12/3f/e0/123fe0f5b1958d7b0703c0e0f69f55db.jpg" alt="Lestari" class="w-12 h-12 rounded-full object-cover">
+                        <div class="ml-3">
+                            <h4 class="font-semibold">Lestari</h4>
+                            <div class="flex text-gold">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-gray-600 italic">"Harga terjangkau untuk kualitas ini."</p>
+                    <img src="https://down-id.img.susercontent.com/file/id-11134103-7rbkd-m9qu4sl64902ae.webp" alt="Review Lestari" class="mt-4 rounded-lg cursor-pointer w-24 h-24 object-cover" onclick="showLightbox(this.src)">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4 max-w-3xl">
+            <h2 class="text-3xl font-bold text-center text-charcoal">Pertanyaan Umum</h2>
+            
+            <div class="mt-8 space-y-4">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <button class="faq-question w-full text-left p-4 font-semibold flex justify-between items-center">
+                        <span>Apakah produk ini original?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer p-4 border-t border-gray-100 hidden">
+                        <p class="text-gray-600">Ya, produk kami 100% original dengan kualitas premium dan garansi resmi.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <button class="faq-question w-full text-left p-4 font-semibold flex justify-between items-center">
+                        <span>Berapa lama waktu pengiriman?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer p-4 border-t border-gray-100 hidden">
+                        <p class="text-gray-600">Pengiriman biasanya memakan waktu 2-4 hari kerja untuk wilayah Jawa dan 3-7 hari kerja untuk luar Jawa.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <button class="faq-question w-full text-left p-4 font-semibold flex justify-between items-center">
+                        <span>Bagaimana cara pengembalian produk?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer p-4 border-t border-gray-100 hidden">
+                        <p class="text-gray-600">Produk dapat dikembalikan dalam waktu 30 hari jika terdapat cacat produksi dengan menghubungi layanan pelanggan kami.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-charcoal text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <h3 class="text-2xl font-bold">Gold High Waist CD</h3>
+                <p class="mt-2 text-gray-300">Shapewear Premium untuk Penampilan Lebih Percaya Diri</p>
+                
+                <div class="mt-6 flex justify-center space-x-4">
+                    <a href="#" class="text-gray-300 hover:text-gold"><i class="fab fa-instagram text-2xl"></i></a>
+                    <a href="#" class="text-gray-300 hover:text-gold"><i class="fab fa-whatsapp text-2xl"></i></a>
+                    <a href="#" class="text-gray-300 hover:text-gold"><i class="fab fa-facebook text-2xl"></i></a>
+                </div>
+                
+                <p class="mt-8 text-gray-400 text-sm">© 2025 Gold High Waist CD. Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Button -->
+    <a href="#order" class="floating-button gold-gradient text-white p-4 rounded-full shadow-lg">
+        <i class="fas fa-shopping-cart text-xl"></i>
+    </a>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <script>
+        // Change main image
+        function changeImage(src) {
+            document.getElementById('mainImage').src = src;
+        }
+        
+        // Select color option
+        function selectColor(element, color) {
+            document.querySelectorAll('.color-option').forEach(opt => {
+                opt.classList.remove('active');
+            });
+            element.classList.add('active');
+            
+            // In a real implementation, you would update product options here
+            console.log('Selected color: ' + color);
+        }
+        
+        // Lightbox functionality
+        function showLightbox(thumbnailSrc) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            
+            // Replace thumbnail URL with full-size image URL if available
+            const fullSizeSrc = thumbnailSrc.replace('_tn', '').replace('_thumbnail', '').replace('_small', '');
+            
+            lightboxImg.src = fullSizeSrc;
+            lightbox.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Close lightbox when clicking outside image
+        document.getElementById('lightbox').addEventListener('click', function(e) {
+            if (e.target === this) {
+                this.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+        
+        document.querySelectorAll('.grid img, .testimonial-card img').forEach(img => {
+            if (!img.classList.contains('rounded-full')) { // Skip profile images
+                img.addEventListener('click', function() {
+                    showLightbox(this.src);
+                });
+            }
+        });
+        
+        document.querySelector('.lightbox-close').addEventListener('click', function() {
+            document.getElementById('lightbox').style.display = 'none';
+        });
+        
+        // FAQ accordion
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', function() {
+                const answer = this.nextElementSibling;
+                const isOpen = answer.classList.contains('hidden');
+                
+                // Close all answers
+                document.querySelectorAll('.faq-answer').forEach(ans => {
+                    ans.classList.add('hidden');
+                });
+                
+                // Reset all icons
+                document.querySelectorAll('.faq-question i').forEach(icon => {
+                    icon.classList.remove('fa-chevron-up');
+                    icon.classList.add('fa-chevron-down');
+                });
+                
+                // Toggle this answer
+                if (isOpen) {
+                    answer.classList.remove('hidden');
+                    this.querySelector('i').classList.remove('fa-chevron-down');
+                    this.querySelector('i').classList.add('fa-chevron-up');
+                }
+            });
+        });
+        
+        // Set timer to 2 hours 45 minutes 30 seconds
+        let timeLeft = 2 * 60 * 60 + 45 * 60 + 30; // in seconds
+        
+        // Update timer every second
+        const timerInterval = setInterval(updateTimer, 1000);
+        
+        function updateTimer() {
+            const hours = Math.floor(timeLeft / 3600);
+            const minutes = Math.floor((timeLeft % 3600) / 60);
+            const seconds = timeLeft % 60;
+            
+            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+            
+            if (timeLeft <= 0) {
+                clearInterval(timerInterval);
+                document.querySelector('.urgency-timer').innerHTML = `
+                    <p class="text-center text-lg text-red-600 font-bold">
+                        <i class="fas fa-exclamation-triangle mr-2"></i>
+                        PENAWARAN TELAH BERAKHIR!
+                    </p>
+                    <p class="text-center mt-2 text-sm">Harga telah kembali normal</p>
+                `;
+            } else {
+                timeLeft--;
+            }
+        }
+        
+        // Sticky header effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.sticky-header');
+            if (window.scrollY > 50) {
+                header.classList.add('py-2');
+                header.classList.remove('py-4');
+            } else {
+                header.classList.remove('py-2');
+                header.classList.add('py-4');
+            }
+        });
+    </script>
+</body>
+</html>
